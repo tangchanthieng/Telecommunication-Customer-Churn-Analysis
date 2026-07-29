@@ -1,12 +1,20 @@
-# Telco Customer Churn Prediction
-
-**Technologies:** Python · Machine Learning · Power BI · Data Analysis
-
-**Skills Demonstrated:** Predictive Analytics · Customer Segmentation · Revenue Impact Modeling · Data Visualization
+### Telecommunication Customer Churn Analysis
 
 ---
 
-# Project Overview
+Owner: Chan Tang
+
+Role: Project Owner/Data Analyst/Data Engineer
+
+Version: 1.1
+
+Date: Jun 2023
+
+Contact: tangchanthieng@gmail.com
+
+---
+
+### 1. Project Overview
 
 Customer churn is one of the most critical challenges in the telecommunications industry. Research suggests that acquiring a new customer can cost **5–25 times more than retaining an existing one**. As competition intensifies and switching barriers decrease, telecom companies must proactively identify customers at risk of leaving.
 
@@ -21,7 +29,7 @@ The objective is not only to **predict churn**, but to **enable proactive churn 
 
 ---
 
-# Business Problem
+### 2. Business Background
 
 Telecommunication companies face multiple churn-related challenges:
 
@@ -36,7 +44,35 @@ Without predictive insights, companies risk losing **high-value customers and re
 
 ---
 
-# Dataset Overview
+### 3. Project Objectives
+
+- Identify the key factors influencing customer churn.
+- Build predictive models to estimate churn probability.
+- Analyze customer demographics, contracts, and service usage.
+- Deliver actionable business insights and retention recommendations.
+- Visualize KPIs through interactive Power BI dashboards.
+
+---
+
+### 4. Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn, Power BI |
+| Machine Learning | Scikit-learn, XGBoost, Random Forest, K-Nearest Neighbors, Logistic Regression |
+| Data Preprocessing | SimpleImputer, StandardScaler, One-Hot Encoding, Ordinal Encoding, ColumnTransformer |
+| Imbalanced Learning | SMOTE, Imbalanced-learn Pipeline |
+| Model Selection & Evaluation | Train-Test Split, Stratified K-Fold Cross Validation, RandomizedSearchCV, ROC-AUC, Precision, Recall, F1-Score, Confusion Matrix |
+| Development Environment | Jupyter Notebook |
+| Version Control | Git, GitHub |
+
+---
+
+### 5. Reporting & Analytics
+
+`Dataset Overview`
 
 The dataset contains customer information from a telecommunications company that provides phone and internet services.
 
@@ -51,16 +87,14 @@ The dataset contains customer information from a telecommunications company that
 
 Each row represents a **single customer**, while columns contain demographic attributes, service usage details, billing information, and satisfaction scores.
 
-### Target Variable
+`Target Variable`
 
 | Variable    | Description                                     |
 | ----------- | ----------------------------------------------- |
 | Churn Label | Indicates whether the customer left the company |
 | Churn Value | Binary value (1 = churned, 0 = retained)        |
 
----
-
-# Dataset Categories
+`Dataset Categories`
 
 The dataset integrates multiple types of customer information.
 
@@ -73,9 +107,7 @@ The dataset integrates multiple types of customer information.
 | Billing         | Monthly charges, total charges, refunds               |
 | Customer Status | Satisfaction scores, churn probability, churn reasons |
 
----
-
-# Key Features Used in Analysis
+`Key Features Used in Analysis`
 
 | Feature                 | Description                                             |
 | ----------------------- | ------------------------------------------------------- |
@@ -90,26 +122,9 @@ The dataset integrates multiple types of customer information.
 
 Redundant attributes were removed during the data preparation phase.
 
----
+`Key Insights from Exploratory Analysis`
 
-# Project Workflow
-
-The project follows a standard **data analytics and machine learning pipeline**.
-
-| Stage                     | Description                                           |
-| ------------------------- | ----------------------------------------------------- |
-| Data Cleaning             | Handle missing values and remove duplicate attributes |
-| Exploratory Data Analysis | Identify churn patterns and correlations              |
-| Feature Engineering       | Transform variables for predictive modeling           |
-| Predictive Modeling       | Train machine learning churn models                   |
-| Visualization             | Develop an interactive Power BI dashboard             |
-| Business Insights         | Translate findings into actionable strategies         |
-
----
-
-# Key Insights from Exploratory Analysis
-
-## Contract Structure
+`Contract Structure`
 
 | Contract Type  | Share of Customers |
 | -------------- | ------------------ |
@@ -120,9 +135,7 @@ The project follows a standard **data analytics and machine learning pipeline**.
 **Insight:**
 Month-to-month contracts show significantly higher churn risk due to lower commitment.
 
----
-
-## Top Churn Drivers
+`Top Churn Drivers`
 
 | Churn Reason                      | Customers |
 | --------------------------------- | --------- |
@@ -134,9 +147,7 @@ Month-to-month contracts show significantly higher churn risk due to lower commi
 **Insight:**
 Competitor-driven churn is the **largest contributor to customer loss**, indicating the importance of competitive pricing and service offerings.
 
----
-
-## Customer Service Issues
+`Customer Service Issues`
 
 | Issue                        | Customers |
 | ---------------------------- | --------- |
@@ -145,9 +156,7 @@ Competitor-driven churn is the **largest contributor to customer loss**, indicat
 
 This suggests that **customer experience and service quality play a major role in retention**.
 
----
-
-# Predictive Modeling
+`Predictive Modeling`
 
 Machine learning models were applied to estimate churn probability.
 
@@ -165,15 +174,11 @@ High-priority customers are typically those with:
 * **Low satisfaction scores**
 * **High customer lifetime value (CLTV)**
 
----
-
-# Power BI Dashboard
+`Power BI Dashboard`
 
 An interactive Power BI dashboard was developed to visualize churn patterns and customer segments.
 
-![alt text](image.png)
-
-### Key Dashboard Metrics
+`Key Dashboard Metrics`
 
 | Metric                 | Value        |
 | ---------------------- | ------------ |
@@ -182,7 +187,7 @@ An interactive Power BI dashboard was developed to visualize churn patterns and 
 | Average Tenure         | 32.39 months |
 | Average Monthly Charge | $64.76       |
 
-### Dashboard Insights
+`Dashboard Insights`
 
 The dashboard enables analysis of:
 
@@ -192,11 +197,9 @@ The dashboard enables analysis of:
 * churn by **satisfaction levels**
 * churn by **competitor factors**
 
----
+`Strategic Recommendations`
 
-# Strategic Recommendations
-
-## 1. Competitor-Based Retention Strategy
+`Competitor-Based Retention Strategy`
 
 | Action                  | Strategy                                                |
 | ----------------------- | ------------------------------------------------------- |
@@ -204,18 +207,14 @@ The dashboard enables analysis of:
 | Service bundles         | Combine devices, unlimited data, and streaming services |
 | Speed-tier optimization | Improve high-speed internet plans                       |
 
----
-
-## 2. Contract Optimization Strategy
+`Contract Optimization Strategy`
 
 | Strategy           | Implementation                                           |
 | ------------------ | -------------------------------------------------------- |
 | Upgrade incentives | Encourage month-to-month users to adopt longer contracts |
 | Loyalty rewards    | Provide benefits at 6, 12, and 24-month milestones       |
 
----
-
-## 3. Customer Service Improvements
+`Customer Service Improvements`
 
 | Strategy                   | Implementation                                 |
 | -------------------------- | ---------------------------------------------- |
@@ -223,9 +222,7 @@ The dashboard enables analysis of:
 | Satisfaction alerts        | Escalate customers with satisfaction score ≤ 2 |
 | Proactive service recovery | Flag customers with multiple support calls     |
 
----
-
-## 4. Pricing Strategy
+`Pricing Strategy`
 
 | Strategy                     | Implementation                                 |
 | ---------------------------- | ---------------------------------------------- |
@@ -233,11 +230,9 @@ The dashboard enables analysis of:
 | Loyalty discounts            | Target high-value customers                    |
 | Paperless billing incentives | Reduce operational costs and improve retention |
 
----
+`Revenue Impact Analysis`
 
-# Revenue Impact Analysis
-
-### Scenario 1 – Reduce Churn by 5%
+**Scenario 1 – Reduce Churn by 5%**
 
 | Metric                    | Value    |
 | ------------------------- | -------- |
@@ -245,18 +240,14 @@ The dashboard enables analysis of:
 | Monthly Revenue Preserved | $22,666  |
 | Annual Revenue Preserved  | $272,000 |
 
----
-
-### Scenario 2 – Extend Customer Tenure by 6 Months
+**Scenario 2 – Extend Customer Tenure by 6 Months**
 
 | Metric                          | Value     |
 | ------------------------------- | --------- |
 | Additional Revenue per Customer | $388      |
 | Total Revenue Increase          | ~$135,800 |
 
----
-
-### Scenario 3 – Protect High CLTV Customers
+**Scenario 3 – Protect High CLTV Customers**
 
 | Metric             | Value     |
 | ------------------ | --------- |
@@ -264,9 +255,7 @@ The dashboard enables analysis of:
 | Average CLTV       | $4,500    |
 | Revenue Protected  | ~$900,000 |
 
----
-
-# Estimated Business Impact
+**Estimated Business Impact**
 
 | Source              | Revenue Impact |
 | ------------------- | -------------- |
@@ -280,9 +269,7 @@ The dashboard enables analysis of:
 
 On a **$21.37M revenue base**, this represents approximately **6% potential revenue growth without additional customer acquisition spending**.
 
----
-
-# Key Takeaway
+`Key Takeaway`
 
 The most effective churn strategy is not simply reducing churn volume.
 
@@ -293,15 +280,3 @@ Retention efforts should prioritize customers with:
 * high **CLTV**
 * high **churn probability**
 * low **satisfaction scores**
-
----
-
-# Author
-
-**Chan Thieng Tang**
-
-Master of Business Analytics
-
-Data Analytics | Business Intelligence
-
-Contact: tangchanthieng@outlook.com
